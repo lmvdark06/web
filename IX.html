@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Sala de Té</title>
+    <link rel="stylesheet" href="IX.css">
+   
+</head>
+<body>
+    <header class="header">
+        <h1>Proyecto Sala de Té</h1>
+    </header>
+    <main class="main-container">
+        <nav class="navigation">
+            <a href="#problema">Problemática</a>
+            <a href="#equipo">Equipo</a>
+            <a href="#comparativos">Comparativos</a>
+            <a href="#extras">Extras</a>
+            <a href="Layco.html" target="_blank">Ejercicio Sala de Té</a>
+        </nav>
+        <section id="problema" class="card">
+            <h2>Problemática</h2>
+            <p>Describa el problema a resolver:</p>
+            <p>La sala de té Layco necesita una aplicación web para gestionar eficientemente las reservaciones de eventos. Los usuarios deben poder ingresar datos personales, seleccionar el tipo de evento y la fecha, indicar la cantidad de personas y elegir un paquete. La aplicación debe asignar un empleado específico y un salón adecuado según la capacidad. Además, debe calcular el costo del evento, incluyendo IVA y el costo total, así como gestionar los requisitos de anticipo y depósito. Todo el proceso debe ser claro y accesible para el cliente, garantizando una administración efectiva de las reservaciones.
+            </p>
+        </section>
+        <section id="equipo" class="card">
+            <h2>Equipo de Trabajo</h2>
+            <div class="integrante active">
+                <p>Luis Alonso Mejia Velasquez (Actividades Realizadas):</p>
+                <p>Yo hice el LX.html y el LX.css, hicimos juntos Layco.js</p>
+            </div>
+            <div class="integrante">
+                <p>Elian Didier Villegas Vanegas (|Actividades Realizadas):</p>
+                <p>Realice Layco.html y layco.css y con mi compañero hicimos Layco.js</p>
+            </div>
+            <button class="button" onclick="nextIntegrante()">Siguiente Integrante</button>
+        </section>
+        <section id="comparativos" class="card">
+            <h2>Aprendizaje del año:</h2>
+            <p>Aprendimos mucho y reforzamos nuestro conocimiento en HTML y aprendimos un poco de Javascript y css</p>
+        </section>
+        <section id="extras" class="card">
+            <h2>Opciones Extra</h2>
+            <p>La venimos a visitar en la recu seño preciosa jijijijijijijijiji </p>
+        </section>
+    </main>
+
+    <script>
+        let currentIntegrante = 0;
+        const integrantes = document.querySelectorAll('.integrante');
+
+        function nextIntegrante() {
+            integrantes[currentIntegrante].classList.remove('active');
+            currentIntegrante = (currentIntegrante + 1) % integrantes.length;
+            integrantes[currentIntegrante].classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    font-family: 'Georgia', serif;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #000000; 
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Cursive', sans-serif;
+}
+
+form {
+    border: 2px solid #ece0e2; 
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000000; 
+}
+
+input, select, button {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ca0f0f;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+}
+
+button {
+    background-color: #df1515; 
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e00f39; 
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffe3e9; 
+    border: 2px solid #000000; 
+    border-radius: 10px;
+    color: #ff0000;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    line-height: 1.5;
+}
+
+label {
+    font-size: 16px;
+    color: #ffffff; 
+    margin-bottom: 5px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #000000; 
+}
+
+h3 {
+    font-family: 'Cursive', sans-serif;
+    text-align: center;
+    color: #000000;
+}
